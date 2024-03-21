@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .nav button {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .option {
+            display: flex;
+            list-style: none;
+        }
+
+        .option a {
+            text-decoration: none;
+            padding-right: 20px;
+            color: black;
+        }
+
+        .manuicon {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .manuicon {
+                display: block;
+            }
+
+            .nav button {
+                display: none;
+            }
+
+            .option {
+                display: none;
+            }
+        }
+
+        .mainbanner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            
+        }
+
+        .banerconten {
+            width: 40%;
+            height: 100%;
+            position: relative;
+            background-color: antiquewhite;
+        }
+
+        .bannerimg {
+            width: 60%;
+            height: 100%;
+            position: relative;
+            background-color: rgb(131, 131, 131);
+        }
+
+        .textcontent{
+            width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+
+        }
+
+        .textcontent h2{
+         font-size: 60px;
+         margin-bottom: 25px;
+        }
+
+        .imgr{
+              background-image: url(https://st3.depositphotos.com/1010613/18204/i/450/depositphotos_182047648-stock-photo-rear-view-hacker-using-multiple.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 80%;
+              height: 80%;
+              border-radius: 20px;
+              position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+
+        @media(max-width: 768px){
+            .mainbanner{
+                flex-direction: column-reverse;
+            }
+
+            .banerconten{
+                width: 100%;
+            }
+
+            .bannerimg{
+                width: 100%;
+            }
+
+
+            .textcontent{
+                padding-bottom: 100px;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            logo
+            <ul class="option">
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">ADVANTAGES</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <button>Get Started <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="manuicon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="mainbanner">
+            <div class="banerconten">
+                <div class="textcontent">
+                    <h2>Your Partner for every marketing activities</h2>
+                    <p>We can support you with content marketing, employer branding,web development, performace marketing or social media marketing,for example</p>
+                </div>
+            </div>
+            <div class="bannerimg">
+                <div class="imgr"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Signika", sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}
+
+.nevbar{
+    max-width: 1380px;
+    margin: auto;  
+    padding: 34px 20px 34px 20px;
+}
+
+.navb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navb p{
+    font-size: 40px;
+}
+
+ul{
+   display: flex;
+   list-style: none;
+   
+}
+
+.navb a{
+    text-decoration: none;
+    padding-right: 32px;
+}
+
+.navb a:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px  ;
+    transition: 0.6s    ;
+}
+
+
+.navb button{
+    background-color: rgba(56, 56, 56, 1);
+    width: 141px;
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navb i{
+    color: whitesmoke;
+    font-size: 30px;
+    display: none;
+}
+
+
+@media(max-width:768px){
+
+    .navb i{
+        display: block;
+    }
+
+    .navb button{
+       display: none;
+    }
+
+    .navb ul{
+        display: none;
+     }
+
+
+
+
+     .textbanner{
+        width: 100%;
+        
+    }
+    
+    .textone{
+        padding-bottom: 50px;
+    }
+    .imgright{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        margin-left: 70px;
+    }
+    
+        .conteaner{
+            flex-direction: column-reverse;
+        }
+
+     
+    
+}
+
+
+.conteaner{
+    max-width: 1380px;
+    margin: auto;
+    display: flex;
+}
+
+.textbanner{
+    width: 60%;
+    height:960px ;
+    /*  : red; */
+}
+
+.textimgbanner{
+    width: 40%;
+    /* height:960px ; */
+    /* background: rgb(142, 0, 203); */
+    display: flex;
+}
+
+.textone{
+    width: 450px;
+    padding: 20% 0 0 20%;
+
+}
+
+.textone h1{
+    font-family: "Londrina Outline", sans-serif;
+    font-size: 123px;
+    color: rgb(154, 154, 154) ;
+    letter-spacing: 10px;
+    opacity: 0.2;
+    
+
+}
+
+.textone p{
+  position: relative;
+  bottom: 150px;
+  left: 150px;
+
+}
+
+.texttwo{
+    font-size: 70px ;
+    position: relative;
+    bottom: 90px;
+}
+
+
+.imgright{
+    background-image: url(/img/Rectangle\ 2.png);
+    width: 589px;
+    height: 655px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.textimgb{
+    position: relative;
+    top: 700px;
+    width: 300px;
+}
+
+
+/* @media(max-width: 768px){
+   
+.textbanner{
+    width: 100%;
+    
+}
+
+.textone{
+    padding-bottom: 50px;
+}
+.imgright{
+    width: 100%;
+}
+
+    .conteaner{
+        flex-direction: column-reverse;
+    }
+} */
+
+
+

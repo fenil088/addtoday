@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .main{
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+            display: flex;
+        }
+
+        .lrft{
+            width: 40%;
+            height: 100%;
+            background: white;
+            position: relative;
+        }
+
+        .right{
+            width: 60%;
+            height: 100%;
+            background: #000;
+        }
+
+        .ltop{
+            width: 100%;
+            height: 50%;
+            background-color: aquamarine;
+            display: flex;
+        }
+
+        
+        .lbottom{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(255, 128, 0);
+        }
+
+        .rtoleft{
+            width: 50%;
+            height: 100%;
+            background-color: blueviolet;
+            background-image: url(https://st5.depositphotos.com/35914836/64906/i/450/depositphotos_649066108-stock-photo-pink-flowers-park-spring-bloosom.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        
+        .rtopright{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(0, 2, 1);
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB0I-UuiSr5WAs3Rlwyp0UUzyTzYcbOlKjFA&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .lbottom{
+            width: 100%;
+            height: 50%;
+            background-color: wheat;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAuijxQwrOi4KMn3ItxWSOK5HMVD2wrf2Lg&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .potion{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            list-style: none;
+            align-items: center;
+
+        }
+        
+        .potion a{
+            text-decoration: none;
+            border-bottom: 2px solid  black;
+            padding-bottom: 5px;
+            font-weight: bolder;
+            color: black;
+
+        }
+
+
+        .textcenter{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+        }
+
+
+        .textcenter a{
+            text-decoration: none;
+            border-bottom: #000 2px solid;
+            padding-bottom: 5px;
+            color: black;
+        }
+
+        
+
+        .textcenter h1{
+         font-size: 40px;
+         padding-bottom: 10px;
+        }
+
+
+        .textcenter p{
+         font-size: 22px;
+         padding-bottom: 10px;
+         color: rgb(77, 77, 77);
+         padding-bottom: 10px;
+         line-height: 30px;
+         
+        }
+
+        @media(max-width: 500px){
+            .main{
+                flex-direction: column;
+            }
+            
+
+            .lrft{
+                width: 100%;
+            }
+
+
+            .right{
+                width: 100%;
+            }
+
+            .textcenter{
+                padding-top: 25px;
+            }
+
+       
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="lrft">
+            <ul class="potion">
+                <i class="fa-solid fa-arrow-left"></i>
+                <li><a href="">About</a></li>
+                <li><a href="">Work</a></li>
+                <i class="fa-brands fa-twitter" style="color: #74C0FC;"></i>
+            </ul>
+
+            <div class="textcenter">
+                <h1>HELLO,</h1>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat illo omnis neque sequi, animi quos explicabo quam eveniet non beatae quae voluptatum veritatis. Fugit modi illum excepturi cum deserunt itaque praesentium neque placeat quasi eligendi cumque ducimus.</P>
+                <a href="">READ</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="ltop">
+                <div class="rtoleft">
+                </div>
+                <div class="rtopright"></div>
+            </div>
+            <div class="lbottom"></div>
+        </div>
+    </div>
+</body>
+</html>
